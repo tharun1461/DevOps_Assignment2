@@ -18,7 +18,7 @@ pipeline{
         stage('Build') {
  
             steps {
-                sh 'docker build -t tharun1461/assignment4App_test:latest .'
+                sh 'docker build -t tharun1461/assignment4app_test:latest .'
             }
         }
  
@@ -32,7 +32,7 @@ pipeline{
         stage('Push') {
  
             steps {
-                sh 'docker push tharun1461/assignment4App_test:latest'
+                sh 'docker push tharun1461/assignment4app_test:latest'
             }
         }
     }
